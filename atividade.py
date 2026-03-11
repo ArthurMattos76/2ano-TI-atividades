@@ -17,4 +17,4 @@ print("\nDados do aluno:")
 for chave, valor in aluno.items():
     print(f"{chave.capitalize()}: {valor}")
 
-print(f"Situação: {situacao}")
+print(f"Situação: {situacao}")  
