@@ -1,17 +1,20 @@
-paciente = {}
+aluno = {}
 
-paciente['nome'] = input("Qual o seu nome:")
-paciente['idade'] = int(input("Quantos anos sua idade:"))
-paciente['peso'] = float(input("Digite seu peso:"))
-paciente['altura'] = float(input("Digite sua altura:"))
+aluno['nome'] = input("Digite o nome do aluno: ")
+aluno['nota1'] = float(input("Digite a nota da prova 1: "))
+aluno['nota2'] = float(input("Digite a nota da prova 2: "))
 
-imc = paciente["peso"] / (paciente["altura"] ** 2)
+aluno['media'] = (aluno['nota1'] + aluno['nota2']) / 2
 
-paciente["imc"] = imc
+if aluno['media'] >= 7:
+    situacao = "Aprovado"
+elif 5 <= aluno['media'] < 7:
+    situacao = "Recuperação"
+else:
+    situacao = "Reprovado"
 
-print("\n Dados)")
-print("Nome:", paciente["nome"])
-print("Idade:", paciente["idade"])
-print("Peso:", paciente["peso"])
-print("Altura:", paciente["altura"])
-print("IMC:", round(paciente["imc"], 2))
+print("\nDados do aluno:")
+for chave, valor in aluno.items():
+    print(f"{chave.capitalize()}: {valor}")
+
+print(f"Situação: {situacao}")
