@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Professores{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4">Professores</h1>
+    <a href="{{ url_for('adicionar_professor') }}" class="btn btn-primary mb-3">Adicionar Professor</a>
+    {% if professores %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Disciplina</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for professor in professores %}
+                <tr>
+                    <td>{{ professor.nome }}</td>
+                    <td>{{ professor.email }}</td>
+                    <td>{{ professor.disciplina }}</td>
+                    <td>
+                        <a href="{{ url_for('editar_professor', id=professor.id) }}" class="btn btn-sm btn-warning">Editar</a>
+                        <a href="{{ url_for('excluir_professor', id=professor.id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza que deseja excluir este professor?');">Excluir</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <div class="alert alert-info">Nenhum professor cadastrado.</div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,93 @@
+/* style.css baseado em templates comuns */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+header {
+    background: #2d3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background: #34495e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+h1, h2, h3 {
+    color: #2d3e50;
+    margin-top: 0;
+}
+
+button, .btn {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+button:hover, .btn:hover {
+    background: #1abc9c;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+footer {
+    background: #2d3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    nav a {
+        margin: 0 8px;
+    }
+}

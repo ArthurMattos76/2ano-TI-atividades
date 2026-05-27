@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Meu Projeto{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Meu Projeto</h1>
+        {% block header %}{% endblock %}
+    </header>
+    <main>
+        <section>
+            <h2>Bem-vindo ao Meu Projeto</h2>
+            <p>Este é um projeto de exemplo utilizando Flask e templates HTML.</p>
+        </section>
+        <section>
+            <h3>Sobre</h3>
+            <p>
+                Aqui você pode adicionar informações sobre o seu projeto, funcionalidades, e qualquer outro conteúdo relevante para os usuários.
+            </p>
+        </section>
+        <section>
+            <h3>Contato</h3>
+            <ul>
+                <li>Email: contato@meuprojeto.com</li>
+                <li>Telefone: (11) 99999-9999</li>
+            </ul>
+        </section>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2026 Meu Projeto</p>
+    </footer>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
