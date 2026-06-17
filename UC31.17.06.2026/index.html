@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Contador</title>
+    </head>
+    <body>
+        <h1>Contador de Acessos</h1>
+        <p>Valor atual: <strong>{{ valor }}</strong></p>
+
+        <form method="post" action="{{ url_for('contador') }}">
+            <button type="submit" name="zerar" value="1">Zerar</button>
+        </form>
+    </body>
+</html>
