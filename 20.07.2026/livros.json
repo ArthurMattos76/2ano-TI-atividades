@@ -1,0 +1,58 @@
+ [
+    {
+        "titulo": "Dom Casmurro",
+        "autor": "Machado de Assis",
+        "ano": 1899,
+        "categoria": "Romance",
+        "quantidade": 5
+    },
+    {
+        "titulo": "O Pequeno Príncipe",
+        "autor": "Antoine de Saint-Exupéry",
+        "ano": 1943,
+        "categoria": "Infantil",
+        "quantidade": 8
+    },
+    {
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "ano": 1949,
+        "categoria": "Ficção",
+        "quantidade": 4
+    },
+    {
+        "titulo": "Harry Potter e a Pedra Filosofal",
+        "autor": "J. K. Rowling",
+        "ano": 1997,
+        "categoria": "Fantasia",
+        "quantidade": 10
+    },
+    {
+        "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+        "autor": "J. R. R. Tolkien",
+        "ano": 1954,
+        "categoria": "Fantasia",
+        "quantidade": 6
+    },
+    {
+        "titulo": "Percy Jackson e o Ladrão de Raios",
+        "autor": "Rick Riordan",
+        "ano": 2005,
+        "categoria": "Fantasia",
+        "quantidade": 7
+    },
+    {
+        "titulo": "A Revolução dos Bichos",
+        "autor": "George Orwell",
+        "ano": 1945,
+        "categoria": "Fábula",
+        "quantidade": 5
+    },
+    {
+        "titulo": "Jogos Vorazes",
+        "autor": "Suzanne Collins",
+        "ano": 2008,
+        "categoria": "Ficção",
+        "quantidade": 9
+    }
+]
