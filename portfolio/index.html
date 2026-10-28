@@ -1,0 +1,212 @@
+<!-- Define o tipo de documento como HTML5 -->
+<!DOCTYPE html>
+<!-- Define a linguagem da página como português do Brasil -->
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 para suporte a acentos -->
+    <meta charset="UTF-8">
+    <!-- Ajusta a visualização para dispositivos móveis (responsividade) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Portfólio | Arthur Mattos</title>
+    <!-- Link para a folha de estilos externa em CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho principal da página -->
+    <header class="cabecalho">
+        <div class="container conteudo-cabecalho">
+            <!-- Logo/Nome do estudante -->
+            <a href="#inicio" class="logo" aria-label="Ir para a página inicial">AM</a>
+
+            <!-- Botões de controle (Tema e Menu Mobile) -->
+            <div class="controles-cabecalho">
+                <!-- Botão para alternar entre Tema Claro e Escuro -->
+                <button id="btn-tema" class="btn-icone" aria-label="Alternar tema claro e escuro">
+                    <span id="icone-tema">🌙</span>
+                </button>
+
+                <!-- Botão do Menu Hambúrguer para telas pequenas -->
+                <button id="btn-hamburguer" class="btn-hamburguer" aria-expanded="false" aria-controls="menu-navegacao" aria-label="Abrir menu de navegação">
+                    <span class="linha-hamburguer"></span>
+                    <span class="linha-hamburguer"></span>
+                    <span class="linha-hamburguer"></span>
+                </button>
+            </div><!-- /controles-cabecalho -->
+
+            <!-- Menu de navegação principal -->
+            <nav id="menu-navegacao" class="navegacao" aria-label="Navegação principal">
+                <ul>
+                    <!-- Links com âncoras para navegar entre as seções -->
+                    <li><a href="#inicio" class="link-nav">Início</a></li>
+                    <li><a href="#sobre" class="link-nav">Sobre mim</a></li>
+                    <li><a href="#habilidades" class="link-nav">Habilidades</a></li>
+                    <li><a href="#projetos" class="link-nav">Projetos</a></li>
+                    <li><a href="#contato" class="link-nav">Contato</a></li>
+                </ul>
+            </nav><!-- /navegacao -->
+        </div><!-- /container -->
+    </header><!-- /cabecalho -->
+
+    <!-- Conteúdo principal do site -->
+    <main>
+
+        <!-- Seção Início / Hero com a foto ao lado -->
+        <section id="inicio" class="secao secao-inicio">
+            <div class="container conteudo-inicio">
+                <div class="texto-inicio">
+                    <!-- Saudação fixa -->
+                    <p class="saudacao-texto">Olá!</p>
+                    <!-- Nome em destaque -->
+                    <h1 class="nome-destaque">Arthur Mattos</h1>
+                    <!-- Apresentação curta da profissão/status -->
+                    <p class="subtitulo">Desenvolvedor & Enthusiasta da Tecnologia (17 anos)</p>
+                    <!-- Texto introdutório -->
+                    <p class="descricao-curta">
+                        Bem-vindo ao meu portfólio. Aqui você encontrará meus projetos, estudos e conhecimentos em tecnologia e desenvolvimento de software.
+                    </p>
+                    <!-- Botão de ação para rolar até a seção de projetos -->
+                    <a href="#projetos" class="btn btn-principal">Ver meus projetos</a>
+                </div><!-- /texto-inicio -->
+
+                <!-- Foto menor ao lado do texto de boas-vindas -->
+                <div class="foto-inicio-container">
+                    <img src="img/Retrato profissional com óculos dourados.png" alt="Foto de perfil de Arthur Mattos" class="foto-inicio">
+                </div>
+            </div><!-- /container -->
+        </section><!-- /secao-inicio -->
+
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="secao secao-sobre">
+            <div class="container">
+                <h2 class="titulo-secao">Sobre mim</h2>
+                <div class="card-estudante">
+                    <p>
+                        Tenho 17 anos e sou movido pelo aprendizado contínuo na área da tecnologia. Tenho facilidade para aprender rápido e dominar tanto a parte de código e lógica quanto o funcionamento de hardware e equipamentos eletrônicos.
+                    </p>
+                    <p>
+                        Atualmente foco meus estudos no desenvolvimento de soluções eficientes, praticando lógica de programação e estruturação de dados para aprimorar minhas habilidades técnicas a cada projeto.
+                    </p>
+                </div><!-- /card-estudante -->
+            </div><!-- /container -->
+        </section><!-- /secao-sobre -->
+
+        <!-- Seção Habilidades -->
+        <section id="habilidades" class="secao secao-habilidades">
+            <div class="container">
+                <h2 class="titulo-secao">Habilidades e Tecnologias</h2>
+                <p class="subtitulo-secao">Tecnologias e competências que domino e pratico diariamente:</p>
+                
+                <!-- Grade de habilidades em formato de cartões simples -->
+                <div class="grade-habilidades">
+                    <article class="card-habilidade">
+                        <h3>HTML5</h3>
+                        <p>Estruturação semântica e acessível para aplicações web.</p>
+                    </article>
+
+                    <article class="card-habilidade">
+                        <h3>CSS3</h3>
+                        <p>Estilização, design responsivo e personalização visual moderna.</p>
+                    </article>
+
+                    <article class="card-habilidade">
+                        <h3>JavaScript</h3>
+                        <p>Desenvolvimento de interatividade, lógica de programação e manipulação DOM.</p>
+                    </article>
+
+                    <article class="card-habilidade">
+                        <h3>Python</h3>
+                        <p>Construção de scripts, automação e lógica de programação avançada.</p>
+                    </article>
+
+                    <article class="card-habilidade">
+                        <h3>JSON</h3>
+                        <p>Estruturação, manipulação e troca eficiente de dados entre aplicações.</p>
+                    </article>
+
+                    <article class="card-habilidade">
+                        <h3>Aprendizado Rápido</h3>
+                        <p>Facilidade para absorver novos conceitos, frameworks e linguagens de forma ágil.</p>
+                    </article>
+
+                    <article class="card-habilidade">
+                        <h3>Domínio Tecnológico & Eletrônicos</h3>
+                        <p>Facilidade no entendimento e manuseio da maioria dos equipamentos eletrônicos e sistemas.</p>
+                    </article>
+                </div><!-- /grade-habilidades -->
+            </div><!-- /container -->
+        </section><!-- /secao-habilidades -->
+
+       <!-- Seção Projetos -->
+        <section id="projetos" class="secao secao-projetos">
+            <div class="container">
+                <h2 class="titulo-secao">Projetos</h2>
+                <p class="subtitulo-secao">Trabalhos e soluções desenvolvidos:</p>
+
+                <!-- Grade com projetos -->
+                <div class="grade-projetos">
+                    <!-- Projeto 1 -->
+                    <article class="card-projeto">
+                        <span class="tag-projeto">Desenvolvimento</span>
+                        <h3>Automação & Manipulação de Dados</h3>
+                        <p>
+                            Scripts desenvolvidos em Python para integração e manipulação de arquivos JSON e automação de rotinas.
+                        </p>
+                        <div class="tecnologias-projeto">
+                            <span>Python</span>
+                            <span>JSON</span>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2 -->
+                    <article class="card-projeto">
+                        <span class="tag-projeto">Web</span>
+                        <h3>Aplicações Web Interativas</h3>
+                        <p>
+                            Projetos com foco em interface do usuário, responsividade e dinamismo visual.
+                        </p>
+                        <div class="tecnologias-projeto">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </article>
+                </div><!-- /grade-projetos -->
+            </div><!-- /container -->
+        </section><!-- /secao-projetos -->
+        
+        <!-- Seção Contato Direto -->
+        <section id="contato" class="secao secao-contato">
+            <div class="container">
+                <h2 class="titulo-secao">Contato</h2>
+                <p class="subtitulo-secao">Entre em contato comigo através dos canais abaixo:</p>
+
+                <div class="card-contato-direto">
+                    <p>📧 <strong>E-mail:</strong> <a href="mailto:Arthur.mattos@gmail.com">Arthur.mattos@gmail.com</a></p>
+                    <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/ArthurMattos76" target="_blank" rel="noopener noreferrer">https://github.com/ArthurMattos76</a></p>
+                </div>
+            </div><!-- /container -->
+        </section><!-- /secao-contato -->
+
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="rodape">
+        <div class="container conteudo-rodape">
+            <p>© <span id="ano-atual"></span> Arthur Mattos. Todos os direitos reservados.</p>
+            
+            <!-- Declaração Transparente sobre o Uso de IA -->
+            <p class="declaracao-ia">
+                O planejamento, as escolhas de conteúdo e a organização do projeto foram conduzidos por mim.
+            </p>
+
+            <!-- Link para voltar ao topo -->
+            <a href="#inicio" class="link-topo">Voltar ao topo ↑</a>
+        </div><!-- /conteudo-rodape -->
+    </footer><!-- /rodape -->
+
+    <!-- Script JavaScript no final do body para não travar o carregamento da página -->
+    <script src="js/script.js"></script>
+</body>
+</html>
